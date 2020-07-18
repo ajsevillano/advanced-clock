@@ -7,8 +7,12 @@ function getTime() {
 
 	formattedSeconds = addLeadingZero(seconds);
 
-	// console.log(formattedSeconds[0]);
-	// console.log(formattedSeconds[1]);
+	document.querySelector('.SecondsFirstDigit').innerText = formattedSeconds[0];
+	document.querySelector('.SecondsSecondDigit').innerText = formattedSeconds[1];
+
+	timer = setTimeout(() => {
+		getTime();
+	}, 500);
 }
 
 function addLeadingZero(param) {
