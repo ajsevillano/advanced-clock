@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--mainFont: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: var(--mainFont);
+	background-color: #f45866;
+}
+
+.clock-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.clock-container span {
+	font-size: 5vw;
+	background-color: white;
+	padding: 0 20px 0 20px;
+	margin: 5px;
+	border-radius: 10px;
+}
+
+.clock-container h1 {
+	margin-bottom: 30px;
+}
+
+.separator {
+	background-color: #f45866 !important;
+}
