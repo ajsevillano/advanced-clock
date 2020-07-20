@@ -16,7 +16,7 @@ body {
 
 .clock-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
@@ -30,10 +30,23 @@ body {
 	border-radius: 10px;
 }
 
-.clock-container h1 {
-	margin-bottom: 30px;
+.clock-container h2 {
+	margin-top: 10px;
 }
 
-.separator {
-	background-color: #f45866 !important;
+.colon {
+	display: flex;
+	font-size: 50px;
+	height: 120px;
+}
+
+.hoursContainer,
+.minutesContainer,
+.secondsContainter {
+	display: flex;
+	width: 220px;
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
