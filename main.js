@@ -28,4 +28,17 @@ function addLeadingZero(param) {
 	return formattedNumber;
 }
 
+//Theme Switcher
+
+const body = document.body;
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', () => {
+	if (toggleButton.checked == true) {
+		body.classList.replace('light', 'dark');
+	} else {
+		body.classList.replace('dark', 'light');
+	}
+});
+
 getTime();
