@@ -7,11 +7,20 @@
 
 :root {
 	--mainFont: 'Open Sans', sans-serif;
+	--lightBG: #fdc96c;
+	--darkBG: rgb(31, 44, 64);
+	--darkFontColor: white;
 }
 
 body {
 	font-family: var(--mainFont);
-	background-color: #fdc96c;
+	background-color: var(--lightBG);
+	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.dark {
+	background-color: var(--darkBG);
+	color: var(--darkFontColor);
 }
 
 .clock-container {
@@ -25,6 +34,7 @@ body {
 
 .clock-container span {
 	font-size: 90px;
+	color: black;
 	background-color: white;
 	padding: 0 20px 0 20px;
 	margin: 5px;
