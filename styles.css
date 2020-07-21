@@ -14,8 +14,11 @@
 
 body {
 	font-family: var(--mainFont);
-	background-color: var(--lightBG);
 	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+.light {
+	background-color: var(--lightBG);
 }
 
 .dark {
