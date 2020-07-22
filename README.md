@@ -34,4 +34,4 @@ This project was inspired by this [post](https://www.blog.duomly.com/9-javascrip
 
 Please, feel free to use, modify or rewrite this code for your own use.
 
-MIT © [Ajsevillano]()
+MIT © [Ajsevillano](https://github.com/ajsevillano)
