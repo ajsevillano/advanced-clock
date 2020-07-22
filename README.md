@@ -4,11 +4,11 @@ A single 24 hours format javascript clock written in javascript with an option t
 
 ## Motivation
 
-I created this project to go deeper in the handling of the time in javascript and also practise some CSS effects.
+I created this project to go deeper in the handling of [DATE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) in javascript and also practise some CSS effects.
 
 ## Screenshots
 
-![Javascript clock](https://ibb.co/5YLMCFN)
+![Javascript clock](https://i.imgur.com/GnrvG4M.png)
 
 ## Tech/framework used
 
