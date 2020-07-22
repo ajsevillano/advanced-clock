@@ -1,7 +1,20 @@
 //Clock
 
 function getTime() {
-	let time, hours, minutes, seconds, formattedSeconds;
+	let time,
+		hours,
+		minutes,
+		seconds,
+		formattedHours,
+		formattedMinutes,
+		formattedSeconds,
+		HoursFirstDigit,
+		HoursSecondDigit,
+		MinutesFirstDigit,
+		MinutesSecondDigit,
+		SecondsFirstDigit,
+		SecondsSecondDigit;
+
 	time = new Date();
 	hours = time.getHours();
 	minutes = time.getMinutes();
@@ -11,13 +24,18 @@ function getTime() {
 	formattedMinutes = addLeadingZero(minutes);
 	formattedSeconds = addLeadingZero(seconds);
 
+	//Destructured arrays
+	[HoursFirstDigit, HoursSecondDigit] = formattedHours;
+	[MinutesFirstDigit, MinutesSecondDigit] = formattedMinutes;
+	[SecondsFirstDigit, SecondsSecondDigit] = formattedSeconds;
+
 	//Querys
-	document.querySelector('.HoursFirstDigit').innerText = formattedHours[0];
-	document.querySelector('.HoursSecondDigit').innerText = formattedHours[1];
-	document.querySelector('.MinutesFirstDigit').innerText = formattedMinutes[0];
-	document.querySelector('.MinutesSecondDigit').innerText = formattedMinutes[1];
-	document.querySelector('.SecondsFirstDigit').innerText = formattedSeconds[0];
-	document.querySelector('.SecondsSecondDigit').innerText = formattedSeconds[1];
+	document.querySelector('.HoursFirstDigit').innerText = HoursFirstDigit;
+	document.querySelector('.HoursSecondDigit').innerText = HoursSecondDigit;
+	document.querySelector('.MinutesFirstDigit').innerText = MinutesFirstDigit;
+	document.querySelector('.MinutesSecondDigit').innerText = MinutesSecondDigit;
+	document.querySelector('.SecondsFirstDigit').innerText = SecondsFirstDigit;
+	document.querySelector('.SecondsSecondDigit').innerText = SecondsSecondDigit;
 
 	//Timer
 	setTimeout(() => {
