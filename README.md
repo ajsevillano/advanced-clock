@@ -1,7 +1,6 @@
 ## Javascript Digital clock with light/dark theme selector
 
-A little info about your project and/ or overview that explains **what** the project is about.
-A single javascript clock written in javascript with an option to choose between a light or dark theme.
+A single 24 hours format javascript clock written in javascript with an option to choose between a light or dark theme.
 
 ## Motivation
 
@@ -9,7 +8,7 @@ I created this project to go deeper in the handling of the time in javascript an
 
 ## Screenshots
 
-Include logo/demo screenshot etc.
+![Javascript clock](https://ibb.co/5YLMCFN)
 
 ## Tech/framework used
 
