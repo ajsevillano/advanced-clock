@@ -9,6 +9,7 @@
 	--mainFont: 'Open Sans', sans-serif;
 	--lightBG: #fdc96c;
 	--darkBG: rgb(31, 44, 64);
+	--darkBGToggleButton: rgb(53, 74, 107);
 	--darkFontColor: white;
 }
 
@@ -26,12 +27,26 @@ body {
 	color: var(--darkFontColor);
 }
 
+.header {
+	display: flex;
+	height: 10vh;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.sun,
+.moon {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px 0 10px;
+}
+
 .clock-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
-	height: 100vh;
+	height: 90vh;
 	flex-wrap: wrap;
 }
 
@@ -79,6 +94,7 @@ body {
 	display: inline-block;
 	width: 60px;
 	height: 34px;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .switch input {
@@ -94,7 +110,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: #fadfae;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
@@ -112,11 +128,7 @@ body {
 }
 
 input:checked + .slider {
-	background-color: var(--darkBG);
-}
-
-input:focus + .slider {
-	box-shadow: 0 0 1px #2196f3;
+	background-color: var(--darkBGToggleButton);
 }
 
 input:checked + .slider:before {
@@ -133,6 +145,8 @@ input:checked + .slider:before {
 .slider.round:before {
 	border-radius: 50%;
 }
+
+/* Media Queries */
 
 @media (max-width: 480px) {
 	.hoursContainer,

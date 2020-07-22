@@ -1,3 +1,5 @@
+//Clock
+
 function getTime() {
 	let time, hours, minutes, seconds, formattedSeconds;
 	time = new Date();

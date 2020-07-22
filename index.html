@@ -7,36 +7,42 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body class="light">
-		<label class="switch">
-			<input id="toggleButton" type="checkbox" />
-			<span class="slider round"></span>
-		</label>
-		<div class="clock-container">
-			<div class="col-head"><h2>Javascript clock</h2></div>
-			<div class="hoursContainer">
-				<div>
-					<span class="HoursFirstDigit"></span
-					><span class="HoursSecondDigit"></span>
+		<header class="header">
+			<img class="sun" src="./img/sun.svg" alt="Sun icon" />
+			<label class="switch">
+				<input id="toggleButton" type="checkbox" />
+				<span class="slider round"></span>
+			</label>
+			<img class="moon" src="./img/moon.svg" alt="Moon icon" />
+		</header>
+		<main>
+			<div class="clock-container">
+				<div class="col-head"><h2>Javascript clock</h2></div>
+				<div class="hoursContainer">
+					<div>
+						<span class="HoursFirstDigit"></span
+						><span class="HoursSecondDigit"></span>
+					</div>
+					<h2>Hour</h2>
 				</div>
-				<h2>Hour</h2>
-			</div>
-			<div class="colon">:</div>
-			<div class="minutesContainer">
-				<div>
-					<span class="MinutesFirstDigit"></span>
-					<span class="MinutesSecondDigit"></span>
+				<div class="colon">:</div>
+				<div class="minutesContainer">
+					<div>
+						<span class="MinutesFirstDigit"></span>
+						<span class="MinutesSecondDigit"></span>
+					</div>
+					<h2>Minutes</h2>
 				</div>
-				<h2>Minutes</h2>
-			</div>
-			<div class="colon hidden">:</div>
-			<div class="secondsContainer">
-				<div>
-					<span class="SecondsFirstDigit"></span>
-					<span class="SecondsSecondDigit"></span>
+				<div class="colon hidden">:</div>
+				<div class="secondsContainer">
+					<div>
+						<span class="SecondsFirstDigit"></span>
+						<span class="SecondsSecondDigit"></span>
+					</div>
+					<h2>Seconds</h2>
 				</div>
-				<h2>Seconds</h2>
 			</div>
-		</div>
+		</main>
 	</body>
 	<script src="main.js"></script>
 </html>
