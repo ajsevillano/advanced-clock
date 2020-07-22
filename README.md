@@ -8,7 +8,7 @@ I created this project to go deeper in the handling of the time in javascript an
 
 ## Screenshots
 
-![Javascript clock](https://freeimage.host/i/dxPQyv)
+![Javascript clock](https://imgur.com/a/4MNyi9X)
 
 ## Tech/framework used
 
