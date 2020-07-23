@@ -1,13 +1,9 @@
 //Clock
-
 function getTime() {
 	let time,
 		hours,
 		minutes,
 		seconds,
-		formattedHours,
-		formattedMinutes,
-		formattedSeconds,
 		HoursFirstDigit,
 		HoursSecondDigit,
 		MinutesFirstDigit,
@@ -20,14 +16,9 @@ function getTime() {
 	minutes = time.getMinutes();
 	seconds = time.getSeconds();
 
-	formattedHours = addLeadingZero(hours);
-	formattedMinutes = addLeadingZero(minutes);
-	formattedSeconds = addLeadingZero(seconds);
-
-	//Destructured arrays
-	[HoursFirstDigit, HoursSecondDigit] = formattedHours;
-	[MinutesFirstDigit, MinutesSecondDigit] = formattedMinutes;
-	[SecondsFirstDigit, SecondsSecondDigit] = formattedSeconds;
+	[HoursFirstDigit, HoursSecondDigit] = addLeadingZero(hours);
+	[MinutesFirstDigit, MinutesSecondDigit] = addLeadingZero(minutes);
+	[SecondsFirstDigit, SecondsSecondDigit] = addLeadingZero(seconds);
 
 	//Querys
 	document.querySelector('.HoursFirstDigit').innerText = HoursFirstDigit;
@@ -49,11 +40,10 @@ function addLeadingZero(param) {
 }
 
 //Theme Switcher
-
-const body = document.body;
-const toggleButton = document.getElementById('toggleButton');
-
 toggleButton.addEventListener('click', () => {
+	const body = document.body;
+	const toggleButton = document.getElementById('toggleButton');
+
 	if (toggleButton.checked == true) {
 		body.classList.replace('light', 'dark');
 	} else {

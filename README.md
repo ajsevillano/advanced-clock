@@ -15,8 +15,8 @@ I created this project to go deeper in the handling of [DATE](https://developer.
 <b>Built with</b>
 
 - Javascript
-- CSS
-- HTML
+- CSS 3
+- HTML 5
 
 ## Features
 

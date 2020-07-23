@@ -2,29 +2,23 @@
 
 * {
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
 :root {
 	--mainFont: 'Open Sans', sans-serif;
+	--whiteFont: white;
+	--blackFont: black;
 	--lightBG: #fdc96c;
 	--darkBG: rgb(31, 44, 64);
 	--darkBGToggleButton: rgb(53, 74, 107);
-	--darkFontColor: white;
+	--lightBGToggleButton: #fadfae;
 }
 
 body {
 	font-family: var(--mainFont);
 	transition: background 500ms ease-in-out, color 1000ms ease-in-out;
-}
-
-.light {
-	background-color: var(--lightBG);
-}
-
-.dark {
-	background-color: var(--darkBG);
-	color: var(--darkFontColor);
 }
 
 .header {
@@ -34,11 +28,30 @@ body {
 	align-items: center;
 }
 
+/* Themes Styles */
+
+.light {
+	background-color: var(--lightBG);
+}
+
+.dark {
+	background-color: var(--darkBG);
+	color: var(--whiteFont);
+}
+
 .sun,
 .moon {
 	width: 30px;
 	height: 30px;
 	margin: 0 10px 0 10px;
+}
+
+/* The clock */
+
+.col-head {
+	flex: 1 0 100%;
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 .clock-container {
@@ -52,8 +65,8 @@ body {
 
 .clock-container span {
 	font-size: 90px;
-	color: black;
-	background-color: white;
+	color: var(--blackFont);
+	background-color: var(--whiteFont);
 	padding: 0 20px 0 20px;
 	margin: 5px;
 	border-radius: 10px;
@@ -81,12 +94,6 @@ body {
 	flex-direction: column;
 }
 
-.col-head {
-	flex: 1 0 100%;
-	text-align: center;
-	margin-bottom: 40px;
-}
-
 /* Toggle Button for the Light/Dark theme */
 
 .switch {
@@ -110,7 +117,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #fadfae;
+	background-color: var(--lightBGToggleButton);
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
@@ -122,7 +129,7 @@ body {
 	width: 26px;
 	left: 4px;
 	bottom: 4px;
-	background-color: white;
+	background-color: var(--whiteFont);
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
