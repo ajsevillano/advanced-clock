@@ -1,23 +1,23 @@
 //Global variables
 const toggleButton = document.getElementById('toggleButton');
 
-//Clock
 function getTime() {
-	let time,
-		hours,
-		minutes,
-		seconds,
-		HoursFirstDigit,
+	let time = new Date();
+	hours = time.getHours();
+	minutes = time.getMinutes();
+	seconds = time.getSeconds();
+}
+
+//Clock
+function clock() {
+	getTime();
+
+	let HoursFirstDigit,
 		HoursSecondDigit,
 		MinutesFirstDigit,
 		MinutesSecondDigit,
 		SecondsFirstDigit,
 		SecondsSecondDigit;
-
-	time = new Date();
-	hours = time.getHours();
-	minutes = time.getMinutes();
-	seconds = time.getSeconds();
 
 	[HoursFirstDigit, HoursSecondDigit] = addLeadingZero(hours);
 	[MinutesFirstDigit, MinutesSecondDigit] = addLeadingZero(minutes);
@@ -33,13 +33,26 @@ function getTime() {
 
 	//Timer
 	setTimeout(() => {
-		getTime();
+		clock();
 	}, 500);
 }
 
 function addLeadingZero(param) {
 	let formattedNumber = ('0' + param).slice(-2);
 	return formattedNumber;
+}
+
+//Greeting message
+function greeting() {
+	getTime();
+
+	if (hours >= 7 && hours < 12) {
+		document.querySelector('.greeting').innerText = 'Good morning';
+	} else if (hours >= 12 && hours < 17) {
+		document.querySelector('.greeting').innerText = 'Good afternoon';
+	} else {
+		document.querySelector('.greeting').innerText = 'Good evening';
+	}
 }
 
 //Theme Switcher
@@ -52,4 +65,5 @@ toggleButton.addEventListener('click', () => {
 	}
 });
 
-getTime();
+clock();
+greeting();
