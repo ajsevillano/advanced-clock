@@ -1,3 +1,6 @@
+//Global variables
+const toggleButton = document.getElementById('toggleButton');
+
 //Clock
 function getTime() {
 	let time,
@@ -42,8 +45,6 @@ function addLeadingZero(param) {
 //Theme Switcher
 toggleButton.addEventListener('click', () => {
 	const body = document.body;
-	const toggleButton = document.getElementById('toggleButton');
-
 	if (toggleButton.checked == true) {
 		body.classList.replace('light', 'dark');
 	} else {
