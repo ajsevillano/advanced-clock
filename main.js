@@ -23,7 +23,6 @@ function clock() {
 	[MinutesFirstDigit, MinutesSecondDigit] = addLeadingZero(minutes);
 	[SecondsFirstDigit, SecondsSecondDigit] = addLeadingZero(seconds);
 
-	//Querys
 	document.querySelector('.HoursFirstDigit').innerText = HoursFirstDigit;
 	document.querySelector('.HoursSecondDigit').innerText = HoursSecondDigit;
 	document.querySelector('.MinutesFirstDigit').innerText = MinutesFirstDigit;
