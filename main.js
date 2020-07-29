@@ -52,6 +52,9 @@ function greeting() {
 		document.querySelector('.greeting').innerText = 'Good afternoon';
 	} else {
 		document.querySelector('.greeting').innerText = 'Good evening';
+		toggleButton.checked = true;
+		const body = document.body;
+		body.classList.replace('light', 'dark');
 	}
 }
 
