@@ -20,7 +20,9 @@ I created this project to go deeper in the handling of [DATE](https://developer.
 
 ## Features
 
-The clock have a light/dark theme selector
+The clock have a light/dark theme selector.
+Different greeting based on the moment of the day.
+Auto Dark theme in the evening.
 
 ## How to use?
 
